@@ -61,7 +61,7 @@ The running time was about 4 hours on my laptop.
 ## Result
 
 This procedure resulted in 442,705 structures, stored in file `chlorinated.smi` in directory `Variant`.
-`chlorinated.zip` is zipped copy of this file.
+`chlorinated.zip` is a zipped copy of this file.
 
 Other resolution procedures resulted in 440,334 solutions, as reported in the rdkit-discuss mailing list.
 
