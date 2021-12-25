@@ -67,7 +67,7 @@ Other resolution procedures resulted in 440,334 solutions, as reported in the rd
 
 ## PyLSD input file
 
-A typical pyLSD input file, `sccp_c10h19Cl3.lsd`, contains:
+A typical pyLSD input file created by `gen_Cl_pylsd.py`, such as `sccp_c10h19Cl3.lsd`, contains:
 
 	FORM "C 10 H 19 Cl 3"
 	PIEC 1
