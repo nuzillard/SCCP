@@ -8,7 +8,7 @@ on the rdkit-discuss@lists.sourceforge.net mailing list.
 The question was about the generation of SMILES chains for 
 short chain chlorinated paraffins (SCCP).
 
-These compounds of molecular formula C_{x} H_{2x-y+2} Cl_{y},
+These compounds of molecular formula C<sub>x</sub>H<sub>2x-y+2</sub>Cl<sub>y</sub>,
 x = 10-13, y = 3-12, have a straight carbon backbone
 and their average chlorine content ranges from 40% to 70% by mass.
 
@@ -30,7 +30,7 @@ Working under a Unix-like system makes it possible to speed up the structure
 generation process using [GNU parallel](https://www.gnu.org/software/parallel/).
 
 Copy the `lsdsmi.py` file in the `Variant` directory of pyLSD.
-This version of `lsd.py` redirects the SMILES chains of the found structures
+This version of `lsd.py` redirects and accumulates the SMILES chains of the found structures
 to a file named `chlorinated.smi` without generating 2D depictions.
 
 Running `python gen_formula.py > formula.txt` fills the file `formula.txt` with the 28 
@@ -61,8 +61,9 @@ The running time was about 4 hours on my laptop.
 ## Result
 
 This procedure resulted in 442,705 structures, stored in file `chlorinated.smi` in directory `Variant`.
+`chlorinated.zip` is zipped copy of this file.
 
-Other resolution procedures resulted in 440,334 solutions.
+Other resolution procedures resulted in 440,334 solutions, as reported in the rdkit-discuss mailing list.
 
 ## PyLSD input file
 
@@ -94,7 +95,7 @@ Explanations:
 
 `FORM "C 10 H 19 Cl 3"`: molecular formula.
 
-`PIEC 1`: connected solution, for PyLSD.
+`PIEC 1`: connected solution, for pyLSD.
 
 `CNTD 1`: connected solution, for LSD.
 
@@ -104,7 +105,7 @@ Explanations:
 
 `COUF "counter1"`: name of the file that receives the number of solutions of individual LSD problems. Is different for the different pyLSD input files, so that parallelization of pyLSD runs does not fail.
 
-`MULT 1 C 3 (0 1 2 3)`: atom 1 si a carbon, with sp3 hybridization, of unknown number of attached H atoms.
+`MULT 1 C 3 (0 1 2 3)`: atom 1 is a carbon, with sp3 hybridization, of unknown number of attached H atoms.
 
 `MULT 11 Cl 3 0`: atom 11 is a chlorine, with sp3 hybridization, no attached H atom.
 
