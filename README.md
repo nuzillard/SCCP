@@ -103,11 +103,11 @@ Explanations:
 
 `CCLA 1`: LSD makes carbon classes with carbon atoms with identical status.
 
-`COUF "counter1"`: name of the file that receives the number of solutions of individual LSD problems. Is different for the different pyLSD input files, so that parallelization of pyLSD runs does not fail.
+`COUF "counter1"`: name of the file that receives the number of solutions of an LSD problem after completion. This name is different in the different pyLSD input files produced by `gen_Cl_pylsd.py`, so that pyLSD in `parallel` runs does not fail.
 
-`MULT 1 C 3 (0 1 2 3)`: atom 1 is a carbon, with sp3 hybridization, of unknown number of attached H atoms.
+`MULT 1 C 3 (0 1 2 3)`: atom 1 is a carbon, with sp<sup>3</sup> hybridization, of unknown number of attached H atoms.
 
-`MULT 11 Cl 3 0`: atom 11 is a chlorine, with sp3 hybridization, no attached H atom.
+`MULT 11 Cl 3 0`: atom 11 is a chlorine, with sp<sup>3</sup> hybridization, no attached H atom.
 
 `CARB L1`: L1 is the list of all carbon atoms
 
