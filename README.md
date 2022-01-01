@@ -46,7 +46,7 @@ Ensure that the `chlorinated.smi` does not exist when starting to generate SMILE
 
 Copy the pyLSD input files, `filelist.txt`, and `runit` to the `Variant` folder of pyLSD.
 
-Run `cat filelist.txt | parallel runit {}` from `Variant`
+Run `time cat filelist.txt | parallel ./runit {}` from `Variant`
 
 The running time was 66 minutes on my laptop with 8 processors.
 
