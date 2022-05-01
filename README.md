@@ -13,17 +13,17 @@ x = 10-13, y = 3-12, have a straight carbon backbone
 and their average chlorine content ranges from 40% to 70% by mass.
 
 Gyro's question was answered rather expeditiously by means of character string manipulation.
-However, the use of the computer-assisted structure elucidation software [pyLSD](http://eos.univ-reims.fr/LSD/JmnSoft/PyLSD)
+However, the use of the computer-assisted structure elucidation software [pyLSD](https://nuzillard.github.io/PyLSD)
 was attempted, with some success.
 
-The goal of this project is to create a text file with the SMILES chains of all the SCCP,
+The goal of [this project](https://github.com/nuzillard/SCCP/) is to create a text file with the SMILES chains of all the SCCP,
 one per line.
 
 See also a recent review about 
 [chemical structure generators](https://journals.plos.org/ploscompbiol/article/authors?id=10.1371/journal.pcbi.1008504).
 
 ## Software requirement
-First ensure that [pyLSD](http://eos.univ-reims.fr/LSD/JmnSoft/PyLSD) is installed
+First ensure that [pyLSD](https://nuzillard.github.io/PyLSD) is installed
 and that the demo example input file is correctly processed.
 
 Working under a Unix-like system makes it possible to speed up the structure
