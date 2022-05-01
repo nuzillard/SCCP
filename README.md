@@ -1,5 +1,5 @@
 # SCCP
- Short Chain Chlorinated Paraffins, structures produced by [pyLSD](http://eos.univ-reims.fr/LSD/JmnSoft/PyLSD)
+ Short Chain Chlorinated Paraffins, structures produced by [pyLSD](https://nuzillard.github.io/PyLSD)
 
 ## Context
 This code was written is order to answer a question by Gyro Funch
