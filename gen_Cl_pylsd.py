@@ -14,7 +14,7 @@ def make_file(formula, indx):
 		fh.write("CNTD 1\n")
 		fh.write("BRUL 0\n")
 		fh.write("CCLA 1\n")
-                fh.write("COUF \"counter" + str(indx) + "\"\n")
+		fh.write("COUF \"counter" + str(indx) + "\"\n")
 		nnc = int(nc)
 		nnf = int(nf)
 		for iat in range(1, nnc+1):
@@ -27,11 +27,11 @@ def make_file(formula, indx):
 
 def run():
 	filenames = []
-        indx = 1
+	indx = 1
 	for f in sys.stdin:
 		formula = f.strip()
 		filename = make_file(formula, indx)
-                indx += 1
+		indx += 1
 		filenames.append(filename)
 	fns = '\n'.join(filenames)
 	with open('filelist.txt', 'w') as fout:
